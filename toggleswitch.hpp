@@ -33,7 +33,6 @@ class ToggleSwitch : public QAbstractButton
 
         void paintEvent(QPaintEvent*) override;
         void mouseReleaseEvent(QMouseEvent *) override;
-        void enterEvent(QEvent *) override;
 
         bool m_status;
         int m_margin;

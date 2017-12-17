@@ -72,12 +72,6 @@ void ToggleSwitch::mouseReleaseEvent(QMouseEvent *event)
     QAbstractButton::mouseReleaseEvent(event);
 }
 
-void ToggleSwitch::enterEvent(QEvent *event)
-{
-    this->setCursor(Qt::PointingHandCursor);
-    QAbstractButton::enterEvent(event);
-}
-
 QSize ToggleSwitch::sizeHint(void) const
 {
     return QSize(this->width() + (2 * this->m_margin), this->height() + (2 * this->m_margin));

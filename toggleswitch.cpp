@@ -35,7 +35,7 @@ void ToggleSwitch::paintEvent(QPaintEvent *event)
         painter.setBrush(this->m_bodyBrush);
         painter.setOpacity(1.0);
 
-        if(false == this->m_status)
+        if(true == this->m_status)
         {
             painter.drawEllipse(QRectF(this->width() - this->height(), (this->height() / 2) - (this->height() / 2),
                 this->height(), this->height()));
